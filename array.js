@@ -17,6 +17,24 @@ console.log(val[3])
 
 
 
+let names = ['dev','shiv','monu']
+
+names[2] = 'lalu'
+
+console.log(names)
+
+
+
+
+let data = ['dev',{tech:'js'},2,
+function(){console.log("hello world")}]
+
+
+console.log(data)
+
+data[3]()
+
+
 
 
 
