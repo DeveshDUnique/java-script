@@ -36,6 +36,32 @@ data[3]()
 
 
 
+let nums = [];
+
+nums[0] = 23;
+nums[99] = 89;
+
+console.log(nums)
+
+//for off loop
+
+for(let n of nums)
+{
+    console.log(n)  // all the values in between the nums array will be printed.
+}
+
+
+// for in loop
+
+
+for(let key in nums)
+{
+    console.log(key); // all the key values will be printed.
+}
+
+
+// array destructuring
+
 
 
 
