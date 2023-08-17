@@ -1,4 +1,4 @@
-let arr = (user) =>     // arroe function
+let arr = (user) =>     // arrow function
 {
     console.log("Arrow function " + user);
     return 1;
@@ -38,4 +38,22 @@ let add1 = (num1,num2) =>
 
 let result = add1(10,11);
 console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
