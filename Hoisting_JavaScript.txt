@@ -1,0 +1,6 @@
+during the execution of java script code given to cpu that understands 0 and 1 and JavaScript engine is to do that and initially it goes through the entire code i.e parsing it will assign the variables to undefined.
+
+message variable as undefined i.e var message = undefined
+functions will contain the body of functions itself i.e   Saysomething = function(){}
+
+

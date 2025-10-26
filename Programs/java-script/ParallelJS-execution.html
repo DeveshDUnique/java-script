@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head> 
+    <title>Parallel</title>
+    <script src="Parallel.js"></script>
+    <script>
+        function Sayhi()
+    {
+        alert("Hello There");
+    }
+     // Check if the browser supports Web Workers
+     if(window.Worker)
+     {
+     // Create a new Worker instance
+        const worker = new Worker('Parallel.js');
+     // Listen for messages from the worker
+        worker.onmessage = function(event)
+        {
+            console.log('counter : ',event.data);
+        };
+        // Start the worker's KeepCounting function
+        worker.postMessage('startcounting');
+     }
+     else
+     {
+        console.log("Web Workers are not supported in your browser.")
+     }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="KeepCounting" onclick="KeepCounting()"> <br>
+    <input type= "button" value="Sayhi" onclick="Sayhi()">     
+</body>
+</html>
