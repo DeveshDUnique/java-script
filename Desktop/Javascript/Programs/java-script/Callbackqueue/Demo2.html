@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ThreadBlocking</title>
+    <script>
+        var counter = 0;
+        function KeepCounting(){
+            counter = counter +1;
+            console.log(counter);
+            setTimeout(()=>{
+                KeepCounting();
+            },1000);
+        }
+
+        function SayHi(){
+            alert("Hello!!!")
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Call Counter" onclick="KeepCounting()">
+    <br>
+    <input type="button" value="SayHi" onclick="SayHi()">
+    
+</body>
+</html>

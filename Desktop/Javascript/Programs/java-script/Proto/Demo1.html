@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>__proto__</title>
+    <script>
+        var person =
+        {
+            no: 1,
+            name: "dev",
+            Print:function(){
+                console.log(person.no + " " + person.name);
+            }
+
+        };
+
+        var employee={};
+        employee.__proto__ = person;
+
+        var specialEmp ={};
+        specialEmp.__proto__ = employee;
+        specialEmp.Print();
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

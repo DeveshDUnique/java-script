@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DomContentLoaded</title>
+    <script>
+        debugger;
+        window.addEventListener("DOMContentLoaded",f1);
+
+        function f1()
+        {
+            debugger;
+            console.log("Dom object for image is created in memeory");
+        }
+
+        function f2()
+        {
+            debugger;
+            console.log("Image is available now");
+        }
+    </script>
+</head>
+<body onload="f2()">
+    <img src="DOM-BOM.png" style="height: 300px; width: 400px;">
+</body>
+</html>
