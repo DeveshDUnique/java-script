@@ -1,1 +1,0 @@
-Rendering engine of the browser looks after the html code one by one and then creates the associated dom object when it reaches to the <script> tag it gives the part to scripting engine(eg:-v8) 
